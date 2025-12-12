@@ -1,6 +1,6 @@
 This was a simple C++ mini-project to learn more about Kafka and Caching. Recently, I made a [presentation](https://docs.google.com/presentation/d/1dC_b9wlbYxxbbX1X7Ff1d89jNer-OTv4JUzC83Mm1rM/edit?usp=sharing)) about how Netflix uses Write-Ahead Logging to build a resilient data platform (), and in this project I wanted to apply some of the logic from that presentation. More specficially, I created a project that sends data through a kafka broker and updates the cache (Redis). Planning to write more about this on my blog.
 
-In addition to the core concepts of Kafka and Caching, there is also some practical Docker knowledge that I learned through creating a configuration file to spin up 3 containers that configured my Kafka broker, Redis Cache, and Kafka UI.
+In addition to the core concepts of Kafka and Caching, there is also some practical Docker knowledge that I learned through creating a configuration file to spin up three containers that configured my Kafka broker, Redis Cache, and Kafka UI.
 
 ## Flow of Data
 

@@ -179,11 +179,11 @@ int main()
             }
 
             case RdKafka::ERR__TIMED_OUT:
-                // No message within timeout - this is normal, just keep waiting
+                //No message within timeout - just keep waiting
                 break;
 
             case RdKafka::ERR__PARTITION_EOF:
-                // Reached end of partition - not an error
+                //Reached end of partition
                 cout << "Reached end of partition" << endl;
                 break;
 
@@ -196,9 +196,8 @@ int main()
 
         }
 
-    // Cleanup
     cout << "Closing consumer..." << endl;
-    consumer->close();  // This commits offsets and leaves the consumer group
+    consumer->close();
     delete consumer;
     delete conf;
 

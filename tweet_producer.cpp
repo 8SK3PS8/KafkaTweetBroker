@@ -41,7 +41,7 @@ int main() {
 
     producer->flush(5000);  //produce is async so flush to wait for the message to be sent
     
-    //checking if anything is still inj the queue
+    //checking if anything is still in the queue
     if (producer->outq_len() > 0) {
         std::cerr << producer->outq_len() << " message(s) were not delivered" << std::endl;
     } else {
